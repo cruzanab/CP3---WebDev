@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Modal Login -->
+    <div id="modalLogin" class="modal">
+
+        <div class="modal-content">
+
+            <h2>Login</h2>
+
+            <input type="text" id="usuario" placeholder="Usuário">
+            <input type="password" id="senha" placeholder="Senha">
+
+            <p id="erroLogin" class="erro"></p>
+
+            <button onclick="fazerLogin()">Entrar</button>
+
+        </div>
+
+    </div>
+
+    <!-- Conteúdo principal -->
+    <div class="container">
+
+        <h1>Minha Wishlist</h1>
+
+        <div class="formulario">
+
+            <input type="text" id="novoItem" placeholder="Digite um item">
+
+            <button onclick="adicionarFim()">
+                Adicionar no Final
+            </button>
+
+            <button onclick="adicionarInicio()">
+                Adicionar no Início
+            </button>
+
+        </div>
+
+        <p id="erroItem" class="erro"></p>
+
+        <ul id="listaWishlist"></ul>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
